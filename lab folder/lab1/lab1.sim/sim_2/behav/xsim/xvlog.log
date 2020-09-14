@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab1/lab1.srcs/sources_1/new/DFlipFlop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module DFlipFlop
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab1/lab1.srcs/sources_1/new/DFlipFlop.v:30]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab1/lab1.srcs/sim_1/new/testDFlipFlop.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module testDFlipFlop
+INFO: [VRFC 10-2458] undeclared symbol q, assumed default net type wire [C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab1/lab1.srcs/sim_1/new/testDFlipFlop.v:28]

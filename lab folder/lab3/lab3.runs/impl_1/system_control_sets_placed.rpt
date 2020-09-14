@@ -1,0 +1,110 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Sun Sep 13 22:18:57 2020
+| Host         : DESKTOP-OOQRHJ2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
+| Design       : system
+| Device       : xc7a35t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    32 |
+|    Minimum number of control sets                        |    32 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   207 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    32 |
+| >= 0 to < 4        |    29 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     2 |
+| >= 10 to < 12      |     0 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     1 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              47 |           36 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |               8 |            6 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              10 |           10 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------+--------------------------------+--------------------------------+------------------+----------------+
+|          Clock Signal          |          Enable Signal         |        Set/Reset Signal        | Slice Load Count | Bel Load Count |
++--------------------------------+--------------------------------+--------------------------------+------------------+----------------+
+|  clk_IBUF_BUFG                 |                                |                                |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[0].sp/state_i_2__1_n_0 | genblk2[0].sp/state_i_1__1_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[2].sp/state_i_2__3_n_0 | genblk2[2].sp/state_i_1__3_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[1].sp/state_i_2__2_n_0 | genblk2[1].sp/state_i_1__2_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[3].sp/state_i_2__4_n_0 | genblk2[3].sp/state_i_1__4_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[4].sp/state_i_2__5_n_0 | genblk2[4].sp/state_i_1__5_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[6].sp/state_i_2__7_n_0 | genblk2[6].sp/state_i_1__7_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[5].sp/state_i_2__6_n_0 | genblk2[5].sp/state_i_1__6_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | sp2/state_i_2_n_0              | sp2/state_i_1_n_0              |                1 |              1 |
+|  state_reg_i_3_n_0             | genblk2[7].sp/state_i_2__8_n_0 | genblk2[7].sp/state_i_1__8_n_0 |                1 |              1 |
+|  state_reg_i_3_n_0             | sp3/state_i_2__0_n_0           | sp3/state_i_1__0_n_0           |                1 |              1 |
+|  genblk1[16].fdiv/clkDiv_reg_0 |                                |                                |                1 |              1 |
+|  genblk1[2].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[17].fdiv/clkDiv       |                                |                                |                1 |              1 |
+|  genblk1[1].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[4].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[7].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[6].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[3].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[9].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[5].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[8].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[10].fdiv/clkDiv_reg_0 |                                |                                |                1 |              1 |
+|  genblk1[14].fdiv/clkDiv_reg_0 |                                |                                |                1 |              1 |
+|  genblk1[11].fdiv/clkDiv_reg_0 |                                |                                |                1 |              1 |
+|  genblk1[12].fdiv/clkDiv_reg_0 |                                |                                |                1 |              1 |
+|  genblk1[13].fdiv/clkDiv_reg_0 |                                |                                |                1 |              1 |
+|  genblk1[0].fdiv/clkDiv_reg_0  |                                |                                |                1 |              1 |
+|  genblk1[15].fdiv/clkDiv_reg_0 |                                |                                |                1 |              1 |
+|  genblk2[3].sp/q_reg_1         |                                |                                |                2 |              8 |
+|  state_reg_i_3_n_0             |                                | sp2/set03                      |                6 |              8 |
+|  state_reg_i_3_n_0             |                                |                                |               15 |             20 |
++--------------------------------+--------------------------------+--------------------------------+------------------+----------------+
+
+

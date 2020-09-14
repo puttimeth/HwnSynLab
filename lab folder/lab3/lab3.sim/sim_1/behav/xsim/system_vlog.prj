@@ -1,0 +1,15 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../lab3.srcs/sources_1/new/1digitBCD.v" \
+"../../../../../lab1/lab1.srcs/sources_1/new/DFlipFlop.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/clockDiv.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/quadSevenSeg.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/segmentDecoder.v" \
+"../../../../lab3.srcs/sources_1/new/singlePulser.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/system.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

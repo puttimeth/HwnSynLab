@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep 13 22:17:17 2020
+# Process ID: 11684
+# Current directory: C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.runs/synth_1
+# Command line: vivado.exe -log system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+# Log file: C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.runs/synth_1/system.vds
+# Journal file: C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source system.tcl -notrace

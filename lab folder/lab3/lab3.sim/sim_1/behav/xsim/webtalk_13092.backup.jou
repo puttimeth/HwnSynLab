@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Sep 13 12:11:43 2020
+# Process ID: 13092
+# Current directory: C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.sim/sim_1/behav/xsim/xsim.dir/onedigitBCD_wb_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/NO3/Desktop/year3/hwn -notrace

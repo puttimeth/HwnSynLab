@@ -1,0 +1,11 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+time                    0: {0 0} <- {0 0 0}
+time                 5000: {0 1} <- {0 0 1}
+time                10000: {0 1} <- {0 1 0}
+time                15000: {1 0} <- {0 1 1}
+time                20000: {0 1} <- {1 0 0}
+time                25000: {1 0} <- {1 0 1}
+time                30000: {1 0} <- {1 1 0}
+time                35000: {1 1} <- {1 1 1}
+$finish called at time : 40 ns : File "C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab1/lab1.srcs/sim_1/new/tester.v" Line 68

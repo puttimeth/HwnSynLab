@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.srcs/sources_1/new/clockDiv.v,1598969048,verilog,,C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v,,clockDiv,,,,,,,,
+C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v,1598966713,verilog,,C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v,,quadSevenSeg,,,,,,,,
+C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v,1598966169,verilog,,C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.srcs/sources_1/new/system.v,,segmentDecoder,,,,,,,,
+C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab2/lab2.srcs/sources_1/new/system.v,1598966989,verilog,,,,system,,,,,,,,

@@ -1,0 +1,5 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.srcs/sources_1/new/singlePulser.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlePulser
+WARNING: [VRFC 10-3676] redeclaration of ansi port 'q' is not allowed [C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.srcs/sources_1/new/singlePulser.v:29]
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/NO3/Desktop/year3/hwn syn lab/lab folder/lab3/lab3.srcs/sim_1/new/singlePulser_wb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module singlePulser_wb
