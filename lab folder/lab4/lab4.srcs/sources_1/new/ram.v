@@ -28,7 +28,7 @@ module ram(
     input wire clk
     );
     
-//    (* synthesis, ram block *)
+    (* synthesis, ram_block *)
     reg [7:0] mem [127:0];
     
     initial $readmemb("binary2BCD.dat", mem);

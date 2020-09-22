@@ -17,34 +17,34 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 1
+set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.cache/wt} [current_project]
-set_property parent.project_path {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.xpr} [current_project]
+set_property webtalk.parent_dir {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.xpr} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property board_part_repo_paths {C:/Users/NO3/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
+set_property board_part_repo_paths {C:/Users/PSlaptop/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
 set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
-set_property ip_output_repo {c:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.cache/ip} [current_project]
+set_property ip_output_repo {c:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_mem {
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/binary2BCD.dat}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_divide.dat}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_multiply.dat}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_minus.dat}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_add.dat}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/binary2BCD.dat}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_divide.dat}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_multiply.dat}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_minus.dat}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/4bitCalculator_add.dat}
 }
 read_verilog -library xil_defaultlib {
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/clockDiv.v}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/ram.v}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v}
-  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/binary2BCD.v}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/clockDiv.v}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/ram.v}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v}
+  {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab4/lab4.srcs/sources_1/new/binary2BCD.v}
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -54,8 +54,8 @@ read_verilog -library xil_defaultlib {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/constrs_1/imports/new/Basys-3-Master.xdc}}
-set_property used_in_implementation false [get_files {{C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/constrs_1/imports/new/Basys-3-Master.xdc}}]
+read_xdc {{C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab3/lab3.srcs/constrs_1/imports/new/Basys-3-Master.xdc}}
+set_property used_in_implementation false [get_files {{C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab3/lab3.srcs/constrs_1/imports/new/Basys-3-Master.xdc}}]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
