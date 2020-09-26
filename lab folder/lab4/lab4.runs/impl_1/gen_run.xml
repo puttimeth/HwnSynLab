@@ -1,69 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1600757392">
-  <File Type="BITSTR-BMM" Name="binary2BCD_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="binary2BCD_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="binary2BCD_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR" Name="binary2BCD_power_routed.rpt"/>
   <File Type="PA-TCL" Name="binary2BCD.tcl"/>
-  <File Type="OPT-TIMING" Name="binary2BCD_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="binary2BCD_opt.dcp"/>
+  <File Type="BITSTR-BMM" Name="binary2BCD_bd.bmm"/>
   <File Type="ROUTE-PWR-SUM" Name="binary2BCD_power_summary_routed.pb"/>
   <File Type="REPORTS-TCL" Name="binary2BCD_reports.tcl"/>
+  <File Type="OPT-DCP" Name="binary2BCD_opt.dcp"/>
   <File Type="OPT-DRC" Name="binary2BCD_drc_opted.rpt"/>
   <File Type="OPT-HWDEF" Name="binary2BCD.hwdef"/>
   <File Type="PWROPT-DCP" Name="binary2BCD_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="binary2BCD_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="binary2BCD_timing_summary_pwropted.rpt"/>
   <File Type="PLACE-DCP" Name="binary2BCD_placed.dcp"/>
   <File Type="PLACE-IO" Name="binary2BCD_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="binary2BCD_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="binary2BCD_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL-PB" Name="binary2BCD_utilization_placed.pb"/>
   <File Type="PLACE-CTRL" Name="binary2BCD_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="binary2BCD_incremental_reuse_placed.rpt"/>
   <File Type="PLACE-PRE-SIMILARITY" Name="binary2BCD_incremental_reuse_pre_placed.rpt"/>
   <File Type="BG-BGN" Name="binary2BCD.bgn"/>
-  <File Type="PLACE-TIMING" Name="binary2BCD_timing_summary_placed.rpt"/>
   <File Type="POSTPLACE-PWROPT-DCP" Name="binary2BCD_postplace_pwropt.dcp"/>
   <File Type="BG-BIN" Name="binary2BCD.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="binary2BCD_timing_summary_postplace_pwropted.rpt"/>
   <File Type="PHYSOPT-DCP" Name="binary2BCD_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="binary2BCD_drc_physopted.rpt"/>
   <File Type="BITSTR-MSK" Name="binary2BCD.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="binary2BCD_timing_summary_physopted.rpt"/>
   <File Type="ROUTE-ERROR-DCP" Name="binary2BCD_routed_error.dcp"/>
   <File Type="ROUTE-DCP" Name="binary2BCD_routed.dcp"/>
   <File Type="ROUTE-BLACKBOX-DCP" Name="binary2BCD_routed_bb.dcp"/>
   <File Type="ROUTE-DRC" Name="binary2BCD_drc_routed.rpt"/>
   <File Type="ROUTE-DRC-PB" Name="binary2BCD_drc_routed.pb"/>
-  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="binary2BCD.ltx"/>
   <File Type="ROUTE-DRC-RPX" Name="binary2BCD_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="binary2BCD.mmi"/>
+  <File Type="BITSTR-LTX" Name="binary2BCD.ltx"/>
   <File Type="ROUTE-METHODOLOGY-DRC" Name="binary2BCD_methodology_drc_routed.rpt"/>
+  <File Type="BITSTR-MMI" Name="binary2BCD.mmi"/>
   <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="binary2BCD_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="binary2BCD.sysdef"/>
   <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="binary2BCD_methodology_drc_routed.pb"/>
+  <File Type="BITSTR-SYSDEF" Name="binary2BCD.sysdef"/>
   <File Type="ROUTE-PWR-RPX" Name="binary2BCD_power_routed.rpx"/>
   <File Type="ROUTE-STATUS" Name="binary2BCD_route_status.rpt"/>
   <File Type="ROUTE-STATUS-PB" Name="binary2BCD_route_status.pb"/>
   <File Type="ROUTE-TIMINGSUMMARY" Name="binary2BCD_timing_summary_routed.rpt"/>
   <File Type="ROUTE-TIMING-PB" Name="binary2BCD_timing_summary_routed.pb"/>
   <File Type="ROUTE-TIMING-RPX" Name="binary2BCD_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="binary2BCD_incremental_reuse_routed.rpt"/>
   <File Type="ROUTE-CLK" Name="binary2BCD_clock_utilization_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW" Name="binary2BCD_bus_skew_routed.rpt"/>
   <File Type="ROUTE-BUS-SKEW-PB" Name="binary2BCD_bus_skew_routed.pb"/>
   <File Type="ROUTE-BUS-SKEW-RPX" Name="binary2BCD_bus_skew_routed.rpx"/>
   <File Type="POSTROUTE-PHYSOPT-DCP" Name="binary2BCD_postroute_physopt.dcp"/>
   <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="binary2BCD_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="binary2BCD_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="binary2BCD_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="binary2BCD_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="binary2BCD_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="binary2BCD_bus_skew_postroute_physopted.pb"/>
   <File Type="BG-BIT" Name="binary2BCD.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="binary2BCD_bus_skew_postroute_physopted.rpx"/>
   <File Type="BITSTR-RBT" Name="binary2BCD.rbt"/>
   <File Type="BITSTR-NKY" Name="binary2BCD.nky"/>
   <File Type="BG-DRC" Name="binary2BCD.drc"/>

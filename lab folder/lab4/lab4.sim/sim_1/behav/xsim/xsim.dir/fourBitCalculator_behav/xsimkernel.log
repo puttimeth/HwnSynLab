@@ -1,7 +1,7 @@
-Running: xsim.dir/fourBitCalculator_behav/xsimk.exe -simmode gui -wdb fourBitCalculator_behav.wdb -simrunnum 0 -socket 58459
+Running: xsim.dir/fourBitCalculator_behav/xsimk.exe -simmode gui -wdb fourBitCalculator_behav.wdb -simrunnum 0 -socket 49477
 Design successfully loaded
-Design Loading Memory Usage: 5304 KB (Peak: 5304 KB)
-Design Loading CPU Usage: 31 ms
+Design Loading Memory Usage: 5336 KB (Peak: 5336 KB)
+Design Loading CPU Usage: 46 ms
 Simulation completed
-Simulation Memory Usage: 6120 KB (Peak: 6120 KB)
-Simulation CPU Usage: 46 ms
+Simulation Memory Usage: 6148 KB (Peak: 6148 KB)
+Simulation CPU Usage: 61 ms
