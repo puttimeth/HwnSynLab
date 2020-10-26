@@ -34,6 +34,8 @@ set_property ip_output_repo {c:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/qui
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
   {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/clockDiv.v}
+  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v}
+  {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/imports/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v}
   {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab3/lab3.srcs/sources_1/new/singlePulser.v}
   {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/quiz1_prep/quiz1_prep.srcs/sources_1/new/system2.v}
 }

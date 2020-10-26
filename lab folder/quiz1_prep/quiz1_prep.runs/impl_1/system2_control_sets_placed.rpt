@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Sat Oct 17 10:51:57 2020
+| Date         : Sun Oct 18 19:39:59 2020
 | Host         : DESKTOP-OOQRHJ2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file system2_control_sets_placed.rpt
 | Design       : system2
@@ -23,11 +23,11 @@ Table of Contents
 +----------------------------------------------------------+-------+
 |                          Status                          | Count |
 +----------------------------------------------------------+-------+
-| Total control sets                                       |     0 |
-|    Minimum number of control sets                        |     0 |
+| Total control sets                                       |    28 |
+|    Minimum number of control sets                        |    28 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |     0 |
+| Unused register locations in slices containing registers |   179 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -39,10 +39,10 @@ Table of Contents
 +--------------------+-------+
 |       Fanout       | Count |
 +--------------------+-------+
-| Total control sets |     0 |
-| >= 0 to < 4        |     0 |
-| >= 4 to < 6        |     0 |
-| >= 6 to < 8        |     0 |
+| Total control sets |    28 |
+| >= 0 to < 4        |    23 |
+| >= 4 to < 6        |     4 |
+| >= 6 to < 8        |     1 |
 | >= 8 to < 10       |     0 |
 | >= 10 to < 12      |     0 |
 | >= 12 to < 14      |     0 |
@@ -58,20 +58,49 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | No                     |              41 |           27 |
 | No           | No                    | Yes                    |               0 |            0 |
 | No           | Yes                   | No                     |               0 |            0 |
 | Yes          | No                    | No                     |               0 |            0 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |               0 |            0 |
+| Yes          | Yes                   | No                     |               4 |            4 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
 4. Detailed Control Set Information
 -----------------------------------
 
-+--------------+---------------+------------------+------------------+----------------+
-| Clock Signal | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+--------------+---------------+------------------+------------------+----------------+
++--------------------------------+-------------------------+-------------------------+------------------+----------------+
+|          Clock Signal          |      Enable Signal      |     Set/Reset Signal    | Slice Load Count | Bel Load Count |
++--------------------------------+-------------------------+-------------------------+------------------+----------------+
+|  genblk1[0].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[2].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  fdivTarget/CLK                | spBtnC/state_i_2_n_0    | spBtnC/state_i_1_n_0    |                1 |              1 |
+|  fdivTarget/CLK                | spBtnL/state_i_2__1_n_0 | spBtnL/state_i_1__1_n_0 |                1 |              1 |
+|  fdivTarget/CLK                | spBtnR/state_i_2__2_n_0 | spBtnR/state_i_1__2_n_0 |                1 |              1 |
+|  fdivTarget/CLK                | spBtnU/state_i_2__0_n_0 | spBtnU/state_i_1__0_n_0 |                1 |              1 |
+|  genblk1[10].fdiv/clkDiv_reg_0 |                         |                         |                1 |              1 |
+|  genblk1[3].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[7].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[4].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[5].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[6].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[8].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[9].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  genblk1[15].fdiv/clkDiv_reg_0 |                         |                         |                1 |              1 |
+|  genblk1[14].fdiv/clkDiv_reg_0 |                         |                         |                1 |              1 |
+|  genblk1[11].fdiv/clkDiv_reg_0 |                         |                         |                1 |              1 |
+|  genblk1[16].fdiv/clkDiv_reg_0 |                         |                         |                1 |              1 |
+|  genblk1[13].fdiv/clkDiv_reg_0 |                         |                         |                1 |              1 |
+|  genblk1[17].fdiv/clkDiv       |                         |                         |                1 |              1 |
+|  genblk1[12].fdiv/clkDiv_reg_0 |                         |                         |                1 |              1 |
+|  genblk1[1].fdiv/clkDiv_reg_0  |                         |                         |                1 |              1 |
+|  clk_IBUF_BUFG                 |                         |                         |                1 |              1 |
+|  spBtnC/E[0]                   |                         |                         |                1 |              4 |
+|  spBtnL/E[0]                   |                         |                         |                1 |              4 |
+|  spBtnR/E[0]                   |                         |                         |                2 |              4 |
+|  spBtnU/E[0]                   |                         |                         |                1 |              4 |
+|  fdivTarget/CLK                |                         |                         |                3 |              6 |
++--------------------------------+-------------------------+-------------------------+------------------+----------------+
 
 
