@@ -1,0 +1,17 @@
+0.6
+2019.1
+May 24 2019
+15:06:07
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sim_1/new/aluWB.v,1604222569,verilog,,,,aluWB,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sim_1/new/cpuWB.v,1604229069,verilog,,,,cpuWB,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/adder.v,1604218708,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v,,adder,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v,1604220749,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/control.v,,alu,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/control.v,1604237002,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/extender.v,,control,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/extender.v,1604218722,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v,,extender,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v,1604227868,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v,,memory,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v,1604218726,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v,,mux2_1,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v,1604218703,verilog,,,,nano_sc_system,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v,1604223549,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v,,nanocpu,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v,1604218998,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v,,regfile,,,,,,,,
+C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v,1604235656,verilog,,C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v,,rom,,,,,,,,

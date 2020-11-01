@@ -1,0 +1,77 @@
+Vivado Simulator 2019.1
+Time resolution is 1 ps
+         2 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        20 - mem[0000001] -  xxxxxxxx
+
+         6 - A(REG[ 6]) -  00000000, B(REG[ 6]) -  00000000
+
+         6 - REG[ 6] <- 00000005
+        10 - A(REG[ 7]) -  00000000, B(REG[ 7]) -  00000000
+
+        10 - REG[ 7] <- 00000006
+       100 - mem[0000002] -  00000002
+
+        14 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+
+        14 - REG[ 8] <- 0000000b
+       140 - mem[7ffffff] -  00000003
+
+        18 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+
+        18 - REG[ 9] <- ffffffff
+       180 - mem[0000001] -  xxxxxxxx
+
+        22 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+
+        22 - REG[ 9] <- 00000007
+        26 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+
+        26 - REG[ 9] <- 00000004
+       260 - mem[0000000] -  00000002
+
+        30 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+
+        30 - REG[ 9] <- 00000003
+       300 - mem[0000003] -  00000001
+
+       300 - mem[7fffffe] -  00000004
+
+        34 - A(REG[ 6]) -  00000005, B(REG[ 8]) -  0000000b
+
+        34 - REG[ 9] <- fffffffb
+        38 - A(REG[ 6]) -  00000005, B(REG[ 8]) -  0000000b
+
+        38 - REG[ 9] <- fffffffa
+       380 - mem[xxxxxxx] -  xxxxxxxx
+
+        42 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        46 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        50 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        54 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        58 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        62 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        66 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        70 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        74 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        78 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        82 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        86 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        90 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        94 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+
+        98 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
+

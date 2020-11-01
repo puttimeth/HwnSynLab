@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ns / 1ns
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -35,10 +35,10 @@ module system2(
 
     );
     
-    wire [3:0] num0;
-    wire [3:0] num1;
-    wire [3:0] num2;
-    wire [3:0] num3;
+//    wire [3:0] num0;
+//    wire [3:0] num1;
+//    wire [3:0] num2;
+//    wire [3:0] num3;
 //    wire cout0,bout0,cout1,bout1,cout2,bout2,cout3,bout3;
 //    reg up0,up1,up2,up3;
 //    reg down0,down1,down2,down3;
@@ -56,75 +56,76 @@ module system2(
     
     // generate divide clock
     wire targetClk;
-    wire [18:0] tclk;    
+    wire [24:0] tclk;    
     assign tclk[0]=clk;    
     genvar c;
-    generate for(c=0;c<18;c=c+1)
+    generate for(c=0;c<25;c=c+1)
     begin
         clockDiv fdiv(tclk[c+1], tclk[c]);
     end
     endgenerate    
-    clockDiv fdivTarget(targetClk, tclk[18]);   
+    clockDiv fdivTarget(targetClk, tclk[24]);   
     // end 
     
     // 7 segment
-    quadSevenSeg q7seg(seg,dp,an[0],an[1],an[2],an[3],num0,num1,num2,num3,targetClk);
+//    quadSevenSeg q7seg(seg,dp,an[0],an[1],an[2],an[3],num0,num1,num2,num3,targetClk);
     // end
     
     // sw + btn -> single pulser + divide clock
-    wire [7:0] sw;
-    wire [7:0] sw_sp;
-    wire btnC, btnU, btnL, btnR, btnD;
-    wire btnC_sp, btnU_sp, btnL_sp, btnR_sp, btnD_sp;
-    generate for(c=0;c<8;c=c+1)
-    begin
-        singlePulser sp(sw_sp[c], sw[c], targetClk);
-    end
-    endgenerate
-    singlePulser spBtnC(btnC_sp, btnC, targetClk);
-    singlePulser spBtnU(btnU_sp, btnU, targetClk);
-    singlePulser spBtnL(btnL_sp, btnL, targetClk);
-    singlePulser spBtnR(btnR_sp, btnR, targetClk);
-    singlePulser spBtnD(btnD_sp, btnD, targetClk);
+//    wire [7:0] sw;
+//    wire [7:0] sw_sp;
+//    wire btnC, btnU, btnL, btnR, btnD;
+//    wire btnC_sp, btnU_sp, btnL_sp, btnR_sp, btnD_sp;
+//    generate for(c=0;c<8;c=c+1)
+//    begin
+//        singlePulser sp(sw_sp[c], sw[c], targetClk);
+//    end
+//    endgenerate
+//    singlePulser spBtnC(btnC_sp, btnC, targetClk);
+//    singlePulser spBtnU(btnU_sp, btnU, targetClk);
+//    singlePulser spBtnL(btnL_sp, btnL, targetClk);
+//    singlePulser spBtnR(btnR_sp, btnR, targetClk);
+//    singlePulser spBtnD(btnD_sp, btnD, targetClk);
     // end
     
     // function
-    reg [3:0] num3_reg, num2_reg, num1_reg, num0_reg;
-    assign led = sw;
-    assign num3 = num3_reg;
-    assign num2 = num2_reg;
-    assign num1 = num1_reg;
-    assign num0 = num0_reg;
+    reg [3:0] state;
+    reg [3:0] ledg;
+    
+    assign led[3:0] = ledg;
     
     initial begin
-        num3_reg = 1;
-        num2_reg = 2;
-        num1_reg = 3;
-        num0_reg = 4;
+        state = 0;
     end
     
-    always @(btnC_sp) begin
-        if(btnC_sp == 1) begin
-            num3_reg <= num3_reg + num2_reg;
+    always @(posedge targetClk) begin
+        if(state == 15) begin
+            state = 0;
+        end
+        else begin
+            state = state + 1;
         end
     end
     
-    always @(btnU_sp) begin
-        if(btnU_sp == 1) begin
-            num2_reg <= num2_reg + num1_reg;
-        end
-    end 
-    
-    always @(btnL_sp) begin
-        if(btnL_sp == 1) begin
-            num1_reg <= num1_reg + num0_reg;
-        end
-    end 
-    
-    always @(btnR_sp) begin
-        if(btnR_sp == 1) begin
-            num0_reg <= num0_reg + num3_reg;
-        end
-    end 
+    always @(state) begin
+        case(state)
+            4'b0000: ledg = 4'b0000;
+            4'b0001: ledg = 4'b0001;
+            4'b0010: ledg = 4'b0010;
+            4'b0011: ledg = 4'b0011;
+            4'b0100: ledg = 4'b0100;
+            4'b0101: ledg = 4'b0101;
+            4'b0110: ledg = 4'b0110;
+            4'b0111: ledg = 4'b0111;
+            4'b1000: ledg = 4'b1000;
+            4'b1001: ledg = 4'b1001;
+            4'b1010: ledg = 4'b1010;
+            4'b1011: ledg = 4'b1011;
+            4'b1100: ledg = 4'b1100;
+            4'b1101: ledg = 4'b1101;
+            4'b1110: ledg = 4'b1110;
+            4'b1111: ledg = 4'b1111;                        
+        endcase
+    end
     
 endmodule
