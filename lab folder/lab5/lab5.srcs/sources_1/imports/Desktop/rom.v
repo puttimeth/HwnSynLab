@@ -13,12 +13,12 @@ parameter ADDR_WIDTH=27;
 output	[DATA_WIDTH-1:0]	data;
 input	[ADDR_WIDTH-1:0]	address;
 
-reg	[DATA_WIDTH-1:0]	mem[0:1<<ADDR_WIDTH -1];
+reg	[DATA_WIDTH-1:0]	mem[0:(1<<ADDR_WIDTH)-1];
 
 assign data=mem[address];
 
 initial begin
-	$readmemb("progCPUTest.dat",mem);
+	$readmemb("mmioProg.dat",mem);
 end
 
 endmodule

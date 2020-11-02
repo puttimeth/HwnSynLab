@@ -2,48 +2,45 @@ Vivado Simulator 2019.1
 Time resolution is 1 ps
          2 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
 
-        20 - mem[0000001] -  xxxxxxxx
+        20 - mem[0003ff8] -  xxxxxxxx
 
-         6 - A(REG[ 6]) -  00000000, B(REG[ 6]) -  00000000
+         6 - A(REG[ 4]) -  00000000, B(REG[ 4]) -  00000000
 
-         6 - REG[ 6] <- 00000005
-        10 - A(REG[ 7]) -  00000000, B(REG[ 7]) -  00000000
+         6 - REG[ 4] <- 0000ffe0
+        60 - mem[0000001] -  xxxxxxxx
 
-        10 - REG[ 7] <- 00000006
-       100 - mem[0000002] -  00000002
+        10 - A(REG[ 6]) -  00000000, B(REG[ 6]) -  00000000
 
-        14 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+        10 - REG[ 6] <- 00000004
+       100 - mem[0003ff9] -  00000002
 
-        14 - REG[ 8] <- 0000000b
-       140 - mem[7ffffff] -  00000003
+       100 - mem[0003ff8] -  xxxxxxxx
 
-        18 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+       140 - MEM[0003ff8] <- 00000004
+        14 - A(REG[ 4]) -  0000ffe0, B(REG[ 6]) -  00000004
 
-        18 - REG[ 9] <- ffffffff
-       180 - mem[0000001] -  xxxxxxxx
+       140 - mem[0003ff9] -  xxxxxxxx
 
-        22 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+       180 - MEM[0003ff9] <- 00000004
+        18 - A(REG[ 4]) -  0000ffe0, B(REG[ 6]) -  00000004
 
-        22 - REG[ 9] <- 00000007
-        26 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+       180 - mem[0003ffa] -  xxxxxxxx
 
-        26 - REG[ 9] <- 00000004
-       260 - mem[0000000] -  00000002
+       220 - MEM[0003ffa] <- 00000004
+        22 - A(REG[ 4]) -  0000ffe0, B(REG[ 6]) -  00000004
 
-        30 - A(REG[ 6]) -  00000005, B(REG[ 7]) -  00000006
+       220 - mem[0003ffb] -  xxxxxxxx
 
-        30 - REG[ 9] <- 00000003
-       300 - mem[0000003] -  00000001
+       260 - MEM[0003ffb] <- 00000004
+        26 - A(REG[ 4]) -  0000ffe0, B(REG[ 6]) -  00000004
 
-       300 - mem[7fffffe] -  00000004
+       260 - mem[xxxxxxx] -  xxxxxxxx
 
-        34 - A(REG[ 6]) -  00000005, B(REG[ 8]) -  0000000b
+        30 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
 
-        34 - REG[ 9] <- fffffffb
-        38 - A(REG[ 6]) -  00000005, B(REG[ 8]) -  0000000b
+        34 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
 
-        38 - REG[ 9] <- fffffffa
-       380 - mem[xxxxxxx] -  xxxxxxxx
+        38 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
 
         42 - A(REG[ x]) -  xxxxxxxx, B(REG[ x]) -  xxxxxxxx
 

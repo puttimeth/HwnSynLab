@@ -2,16 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Nov  1 16:18:38 2020
-# Process ID: 14452
+# Start of session at: Mon Nov  2 20:39:50 2020
+# Process ID: 4012
 # Current directory: C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.sim/sim_1/behav/xsim/xsim.dir/aluWB_behav/webtalk/xsim_webtalk.tcl -notrace
+# Command line: wbtcv.exe -mode batch -source C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.sim/sim_1/behav/xsim/xsim.dir/nano_sc_system_behav/webtalk/xsim_webtalk.tcl -notrace
 # Log file: C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.sim/sim_1/behav/xsim/webtalk.log
 # Journal file: C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source C:/Users/NO3/Desktop/year3/HwnSynLab/lab -notrace
-invalid command name "%"
-    while executing
-"% Total    % Received % Xferd  Average Speed   Time    Time     Time  Current"
-    (file "C:/Users/NO3/Desktop/year3/HwnSynLab/lab" line 1)
-INFO: [Common 17-206] Exiting Webtalk at Sun Nov  1 16:18:38 2020...

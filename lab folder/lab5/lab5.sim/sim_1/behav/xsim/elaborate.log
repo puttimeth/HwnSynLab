@@ -5,8 +5,17 @@ Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
+WARNING: [XSIM 43-3980] File "C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v" Line 26 : The SystemVerilog feature ": Sensitivity on Class Property, Queue/Associative/Dynamic Array Element, Select expression on a String" is not supported yet for simulation.
+WARNING: [XSIM 43-3980] File "C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v" Line 27 : The SystemVerilog feature ": Sensitivity on Class Property, Queue/Associative/Dynamic Array Element, Select expression on a String" is not supported yet for simulation.
+WARNING: [XSIM 43-3980] File "C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v" Line 28 : The SystemVerilog feature ": Sensitivity on Class Property, Queue/Associative/Dynamic Array Element, Select expression on a String" is not supported yet for simulation.
+WARNING: [XSIM 43-3980] File "C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v" Line 29 : The SystemVerilog feature ": Sensitivity on Class Property, Queue/Associative/Dynamic Array Element, Select expression on a String" is not supported yet for simulation.
+WARNING: [XSIM 43-3980] File "C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v" Line 30 : The SystemVerilog feature ": Sensitivity on Class Property, Queue/Associative/Dynamic Array Element, Select expression on a String" is not supported yet for simulation.
+WARNING: [XSIM 43-3980] File "C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v" Line 31 : The SystemVerilog feature ": Sensitivity on Class Property, Queue/Associative/Dynamic Array Element, Select expression on a String" is not supported yet for simulation.
+WARNING: [XSIM 43-3980] File "C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v" Line 32 : The SystemVerilog feature ": Sensitivity on Class Property, Queue/Associative/Dynamic Array Element, Select expression on a String" is not supported yet for simulation.
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.segmentDecoder
+Compiling module xil_defaultlib.quadSevenSeg
 Compiling module xil_defaultlib.adder(WIDTH=30)
 Compiling module xil_defaultlib.mux2_1(WIDTH=30)
 Compiling module xil_defaultlib.extender

@@ -7,8 +7,10 @@ verilog xil_defaultlib  \
 "../../../../lab5.srcs/sources_1/imports/Desktop/memory.v" \
 "../../../../lab5.srcs/sources_1/imports/Desktop/mux2_1.v" \
 "../../../../lab5.srcs/sources_1/imports/Desktop/nanocpu.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/quadSevenSeg.v" \
 "../../../../lab5.srcs/sources_1/imports/Desktop/regfile.v" \
 "../../../../lab5.srcs/sources_1/imports/Desktop/rom.v" \
+"../../../../../lab2/lab2.srcs/sources_1/new/segmentDecoder.v" \
 "../../../../lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v" \
 
 # compile glbl module
