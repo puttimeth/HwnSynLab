@@ -60,24 +60,24 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_param chipscope.maxJobs 1
+  set_param chipscope.maxJobs 2
+  set_param synth.elaboration.rodinMoreOptions {rt::set_parameter dissolveMemorySizeLimit 2097152}
   create_project -in_memory -part xc7a35tcpg236-1
-  set_property board_part_repo_paths {C:/Users/NO3/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
+  set_property board_part_repo_paths {C:/Users/PSlaptop/AppData/Roaming/Xilinx/Vivado/2019.1/xhub/board_store} [current_project]
   set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.cache/wt} [current_project]
-  set_property parent.project_path {C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.xpr} [current_project]
-  set_property ip_output_repo {{C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.cache/ip}} [current_project]
+  set_property webtalk.parent_dir {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet {{C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.runs/synth_1/nano_sc_system.dcp}}
-  read_xdc {{C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc}}
+  add_files -quiet {{C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/synth_1/nano_sc_system.dcp}}
+  read_xdc {{C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc}}
   link_design -top nano_sc_system -part xc7a35tcpg236-1
   close_msg_db -file init_design.pb
 } RESULT]
@@ -150,24 +150,6 @@ if {$rc} {
   return -code error $RESULT
 } else {
   end_step route_design
-  unset ACTIVE_STEP 
-}
-
-start_step write_bitstream
-set ACTIVE_STEP write_bitstream
-set rc [catch {
-  create_msg_db write_bitstream.pb
-  catch { write_mem_info -force nano_sc_system.mmi }
-  write_bitstream -force nano_sc_system.bit 
-  catch {write_debug_probes -quiet -force nano_sc_system}
-  catch {file copy -force nano_sc_system.ltx debug_nets.ltx}
-  close_msg_db -file write_bitstream.pb
-} RESULT]
-if {$rc} {
-  step_failed write_bitstream
-  return -code error $RESULT
-} else {
-  end_step write_bitstream
   unset ACTIVE_STEP 
 }
 

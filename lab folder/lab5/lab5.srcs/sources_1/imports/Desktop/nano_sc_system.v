@@ -20,12 +20,9 @@ output dp;
 output [3:0] an;
 input [11:0] sw;
 
-wire [3:0] num3,num2,num1,num0;
-quadSevenSeg q7seg(seg,dp,an[0],an[1],an[2],an[3],num0,num1,num2,num3,clock);
-
 nanocpu	CPU(p_address,p_data,d_address,d_data,mem_wr,clock,nreset);
-rom 	PROGMEM(p_data,p_address[28:2]);
-memory 	DATAMEM(d_data,d_address[28:2],mem_wr,clock);
+rom 	PROGMEM(p_data,p_address[17:2]);
+memory 	DATAMEM(d_data,d_address[15:0],mem_wr,clock,sw,seg,an,dp);
 
 initial
 begin

@@ -2,12 +2,12 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Mon Nov  2 21:07:16 2020
-# Process ID: 15444
-# Current directory: C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.runs/synth_1
+# Start of session at: Tue Nov  3 14:05:16 2020
+# Process ID: 11968
+# Current directory: C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/synth_1
 # Command line: vivado.exe -log nano_sc_system.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source nano_sc_system.tcl
-# Log file: C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.runs/synth_1/nano_sc_system.vds
-# Journal file: C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.runs/synth_1\vivado.jou
+# Log file: C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/synth_1/nano_sc_system.vds
+# Journal file: C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source nano_sc_system.tcl -notrace
 Command: synth_design -top nano_sc_system -part xc7a35tcpg236-1
@@ -16,46 +16,38 @@ Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 11292 
-WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v:29]
+INFO: Helper process launched with PID 6552 
+WARNING: [Synth 8-2611] redeclaration of ansi port segments is not allowed [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v:29]
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 832.422 ; gain = 182.477
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 831.121 ; gain = 181.754
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'nano_sc_system' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v:10]
-INFO: [Synth 8-6157] synthesizing module 'quadSevenSeg' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:23]
-INFO: [Synth 8-6157] synthesizing module 'segmentDecoder' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v:23]
-INFO: [Synth 8-6155] done synthesizing module 'segmentDecoder' (1#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v:23]
-WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
-WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
-WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
-WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
-INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (2#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:23]
-INFO: [Synth 8-6157] synthesizing module 'nanocpu' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v:9]
-INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'nano_sc_system' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v:10]
+INFO: [Synth 8-6157] synthesizing module 'nanocpu' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/adder.v:9]
 	Parameter WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'adder' (3#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/adder.v:9]
-INFO: [Synth 8-6157] synthesizing module 'mux2_1' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (1#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/adder.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
 	Parameter WIDTH bound to: 30 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux2_1' (4#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'extender' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/extender.v:10]
-INFO: [Synth 8-6155] done synthesizing module 'extender' (5#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/extender.v:10]
-INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized0' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1' (2#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'extender' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/extender.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'extender' (3#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/extender.v:10]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized0' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
 	Parameter WIDTH bound to: 5 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized0' (5#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:9]
-WARNING: [Synth 8-639] system function call 'time' not supported [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:34]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized0' (3#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'regfile' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:9]
+WARNING: [Synth 8-639] system function call 'time' not supported [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:34]
 INFO: [Synth 8-251] 0 - A(REG[x]) -  xxxxxxxx, B(REG[x]) -  xxxxxxxx
- [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:34]
-WARNING: [Synth 8-639] system function call 'time' not supported [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:38]
-INFO: [Synth 8-251] 0 - REG[x] <- xxxxxxxx [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:38]
-INFO: [Synth 8-6155] done synthesizing module 'regfile' (6#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:9]
-INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized1' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
+ [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:34]
+WARNING: [Synth 8-639] system function call 'time' not supported [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:38]
+INFO: [Synth 8-251] 0 - REG[x] <- xxxxxxxx [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:38]
+INFO: [Synth 8-6155] done synthesizing module 'regfile' (4#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/regfile.v:9]
+INFO: [Synth 8-6157] synthesizing module 'mux2_1__parameterized1' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
 	Parameter WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized1' (6#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
-INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v:9]
-WARNING: [Synth 8-567] referenced signal 'Cin' should be on the sensitivity list [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v:20]
-INFO: [Synth 8-6155] done synthesizing module 'alu' (7#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v:9]
-INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/control.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'mux2_1__parameterized1' (4#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/mux2_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'alu' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v:9]
+WARNING: [Synth 8-567] referenced signal 'Cin' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v:20]
+INFO: [Synth 8-6155] done synthesizing module 'alu' (5#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/alu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/control.v:10]
 	Parameter ORI bound to: 6'b010000 
 	Parameter ORUI bound to: 6'b010001 
 	Parameter ADD bound to: 6'b000001 
@@ -63,26 +55,469 @@ INFO: [Synth 8-6157] synthesizing module 'control' [C:/Users/NO3/Desktop/year3/H
 	Parameter SW bound to: 6'b011100 
 	Parameter BEQ bound to: 6'b100100 
 	Parameter JMP bound to: 6'b110000 
-INFO: [Synth 8-6155] done synthesizing module 'control' (8#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/control.v:10]
-WARNING: [Synth 8-6014] Unused sequential element z_flag_reg was removed.  [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v:116]
-INFO: [Synth 8-6155] done synthesizing module 'nanocpu' (9#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v:9]
-INFO: [Synth 8-6157] synthesizing module 'rom' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'control' (6#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/control.v:10]
+WARNING: [Synth 8-6014] Unused sequential element z_flag_reg was removed.  [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v:116]
+INFO: [Synth 8-6155] done synthesizing module 'nanocpu' (7#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nanocpu.v:9]
+INFO: [Synth 8-6157] synthesizing module 'rom' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v:9]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
-	Parameter ADDR_WIDTH bound to: 27 - type: integer 
-INFO: [Synth 8-3876] $readmem data file 'mmioProg.dat' is read successfully [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v:21]
-INFO: [Synth 8-6155] done synthesizing module 'rom' (10#1) [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v:9]
-INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:9]
+	Parameter ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'mmioProg.dat' is read successfully [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'rom' (8#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/rom.v:9]
+INFO: [Synth 8-6157] synthesizing module 'memory' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:9]
 	Parameter DATA_WIDTH bound to: 32 - type: integer 
-	Parameter ADDR_WIDTH bound to: 27 - type: integer 
-ERROR: [Synth 8-4556] size of variable 'mem' is too large to handle; the size of the variable is 1073741824, the limit is 1000000 [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:20]
-ERROR: [Synth 8-6156] failed synthesizing module 'memory' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:9]
-ERROR: [Synth 8-6156] failed synthesizing module 'nano_sc_system' [C:/Users/NO3/Desktop/year3/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v:10]
+	Parameter ADDR_WIDTH bound to: 16 - type: integer 
+INFO: [Synth 8-3876] $readmem data file 'data.dat' is read successfully [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:44]
+INFO: [Synth 8-6157] synthesizing module 'quadSevenSeg' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:23]
+INFO: [Synth 8-6157] synthesizing module 'segmentDecoder' [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'segmentDecoder' (9#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/segmentDecoder.v:23]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:69]
+INFO: [Synth 8-6155] done synthesizing module 'quadSevenSeg' (10#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab2/lab2.srcs/sources_1/new/quadSevenSeg.v:23]
+WARNING: [Synth 8-567] referenced signal 'num0' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:47]
+WARNING: [Synth 8-567] referenced signal 'num1' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:47]
+WARNING: [Synth 8-567] referenced signal 'num2' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:47]
+WARNING: [Synth 8-567] referenced signal 'num3' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:47]
+WARNING: [Synth 8-567] referenced signal 'sw' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'memory' (11#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/memory.v:9]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v:40]
+INFO: [Synth 8-6155] done synthesizing module 'nano_sc_system' (12#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/sources_1/imports/Desktop/nano_sc_system.v:10]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[10]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[9]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[8]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[7]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[6]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[5]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[4]
+WARNING: [Synth 8-3331] design control has unconnected port reserved[3]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2921.832 ; gain = 2271.887
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 923.625 ; gain = 274.258
 ---------------------------------------------------------------------------------
-RTL Elaboration failed
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 923.625 ; gain = 274.258
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 923.625 ; gain = 274.258
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:7]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:7]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:8]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:8]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'clk'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:9]
+CRITICAL WARNING: [Vivado 12-4739] create_clock:No valid object(s) found for '-objects [get_ports clk]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:9]
+Resolution: Check if the specified object(s) exists in the current design. If it does, ensure that the correct design hierarchy was specified for the object. If you are working with clocks, make sure create_clock was used to create the clock object before it is referenced.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:111]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:111]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnC'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:112]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:112]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:113]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:113]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnU'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:114]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:114]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:115]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:115]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnL'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:116]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:116]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:117]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:117]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnR'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:118]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:118]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:119]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:119]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'btnD'. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:120]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc:120]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.srcs/constrs_1/imports/new/Basys-3-Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/nano_sc_system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/nano_sc_system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 996.836 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 996.836 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 996.836 ; gain = 347.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 996.836 ; gain = 347.469
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 996.836 ; gain = 347.469
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ext_ops" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 996.836 ; gain = 347.469
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     31 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                4 Bit    Registers := 4     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---RAMs : 
+	            2048K Bit         RAMs := 1     
+	             1024 Bit         RAMs := 1     
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 5     
+	  47 Input     32 Bit        Muxes := 1     
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     30 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 2     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 12    
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 7     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module adder 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     31 Bit       Adders := 1     
+Module mux2_1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     30 Bit        Muxes := 1     
+Module extender 
+Detailed RTL Component Info : 
++---Muxes : 
+	   3 Input     32 Bit        Muxes := 1     
+Module mux2_1__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+Module regfile 
+Detailed RTL Component Info : 
++---RAMs : 
+	             1024 Bit         RAMs := 1     
+Module mux2_1__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module alu 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     33 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   8 Input      1 Bit        Muxes := 1     
+Module control 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 7     
+	   4 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 2     
+Module nanocpu 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	  47 Input     32 Bit        Muxes := 1     
+Module quadSevenSeg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 2     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 4     
++---RAMs : 
+	            2048K Bit         RAMs := 1     
++---Muxes : 
+	   8 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 5     
+	   5 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design nano_sc_system has port dp driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 1117.180 ; gain = 467.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Preliminary Mapping  Report (see note below)
++---------------+----------------------+-----------+----------------------+--------------------+
+|Module Name    | RTL Object           | Inference | Size (Depth x Width) | Primitives         | 
++---------------+----------------------+-----------+----------------------+--------------------+
+|nano_sc_system | CPU/REGFILE/regs_reg | Implied   | 32 x 32              | RAM32M x 12        | 
+|nano_sc_system | DATAMEM/mem_reg      | Implied   | 64 K x 32            | RAM256X1S x 8192   | 
++---------------+----------------------+-----------+----------------------+--------------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:42 . Memory (MB): peak = 1117.180 ; gain = 467.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1117.180 ; gain = 467.812
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Distributed RAM: Final Mapping  Report
++---------------+----------------------+-----------+----------------------+--------------------+
+|Module Name    | RTL Object           | Inference | Size (Depth x Width) | Primitives         | 
++---------------+----------------------+-----------+----------------------+--------------------+
+|nano_sc_system | CPU/REGFILE/regs_reg | Implied   | 32 x 32              | RAM32M x 12        | 
+|nano_sc_system | DATAMEM/mem_reg      | Implied   | 64 K x 32            | RAM256X1S x 8192   | 
++---------------+----------------------+-----------+----------------------+--------------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:00:52 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:53 ; elapsed = 00:00:55 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:53 ; elapsed = 00:00:56 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:55 ; elapsed = 00:00:57 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:57 ; elapsed = 00:00:59 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:05 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |BUFG      |     1|
+|2     |CARRY4    |    28|
+|3     |LUT1      |    34|
+|4     |LUT2      |   100|
+|5     |LUT3      |    69|
+|6     |LUT4      |  4335|
+|7     |LUT5      |    40|
+|8     |LUT6      |  6631|
+|9     |MUXF7     |  1091|
+|10    |MUXF8     |   516|
+|11    |RAM256X1S |  8192|
+|12    |RAM32M    |    12|
+|13    |FDRE      |    25|
+|14    |IBUF      |    12|
+|15    |OBUF      |    12|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------+-------------+------+
+|      |Instance     |Module       |Cells |
++------+-------------+-------------+------+
+|1     |top          |             | 21098|
+|2     |  CPU        |nanocpu      |  9199|
+|3     |    ALU      |alu          |    65|
+|4     |    PCADDER  |adder        |    17|
+|5     |    REGFILE  |regfile      |  9072|
+|6     |  DATAMEM    |memory       | 11873|
+|7     |    quad7seg |quadSevenSeg |    19|
++------+-------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1274.664 ; gain = 625.297
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:56 ; elapsed = 00:01:02 . Memory (MB): peak = 1274.664 ; gain = 552.086
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:05 . Memory (MB): peak = 1274.664 ; gain = 625.297
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 9839 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 7 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1274.664 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 8204 instances were transformed.
+  RAM256X1S => RAM256X1S (MUXF7, MUXF7, MUXF8, RAMS64E, RAMS64E, RAMS64E, RAMS64E): 8192 instances
+  RAM32M => RAM32M (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 12 instances
+
 INFO: [Common 17-83] Releasing license: Synthesis
-32 Infos, 9 Warnings, 0 Critical Warnings and 4 Errors encountered.
-synth_design failed
-ERROR: [Common 17-69] Command failed: Synthesis failed - please see the console or run log file for details
-INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 21:07:33 2020...
+46 Infos, 37 Warnings, 13 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:27 . Memory (MB): peak = 1274.664 ; gain = 880.449
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.068 . Memory (MB): peak = 1274.664 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/synth_1/nano_sc_system.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:09 . Memory (MB): peak = 1274.664 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file nano_sc_system_utilization_synth.rpt -pb nano_sc_system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Nov  3 14:07:00 2020...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Nov  3 14:07:20 2020
+# Process ID: 17000
+# Current directory: C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/impl_1
+# Command line: vivado.exe -log nano_sc_system.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source nano_sc_system.tcl -notrace
+# Log file: C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/impl_1/nano_sc_system.vdi
+# Journal file: C:/Users/PSlaptop/Desktop/HwnSynLab/lab folder/lab5/lab5.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source nano_sc_system.tcl -notrace

@@ -8,7 +8,7 @@
 //              : Chulalongkorn University.
 module rom(data,address);
 parameter DATA_WIDTH=32;
-parameter ADDR_WIDTH=27;
+parameter ADDR_WIDTH=16;
 
 output	[DATA_WIDTH-1:0]	data;
 input	[ADDR_WIDTH-1:0]	address;
@@ -18,7 +18,7 @@ reg	[DATA_WIDTH-1:0]	mem[0:(1<<ADDR_WIDTH)-1];
 assign data=mem[address];
 
 initial begin
-	$readmemb("mmioProg.dat",mem);
+	$readmemb("progCPUTest.dat",mem);
 end
 
 endmodule
