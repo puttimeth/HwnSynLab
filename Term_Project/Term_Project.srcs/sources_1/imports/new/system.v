@@ -27,14 +27,31 @@ module system(
     input wire [11:0]sw,
     input btnC, btnU, btnL, clk
     );
-    
+
+wire [7:0] answer[0:4];
+
 vga_test vga(
     .clk(clk), 
-    .sw(sw),
+    .answer4(answer[4]),
+    .answer3(answer[3]),
+    .answer2(answer[2]),
+    .answer1(answer[1]),
+    .answer0(answer[0]),
     .push({btnL, btnU}),
     .hsync(Hsync),
     .vsync(Vsync),
     .rgb({vgaRed, vgaGreen, vgaBlue})
+);
+
+uartSystem u(
+    .clk(clk),
+    .RsRx(RsRx),
+    .RsTx(RsTx),
+    .answer4(answer[4]),
+    .answer3(answer[3]),
+    .answer2(answer[2]),
+    .answer1(answer[1]),
+    .answer0(answer[0])
 );
 
 /*top_uart u(

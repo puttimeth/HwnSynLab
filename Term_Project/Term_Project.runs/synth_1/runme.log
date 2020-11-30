@@ -1,0 +1,723 @@
+
+*** Running vivado
+    with args -log system.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source system.tcl
+
+
+****** Vivado v2019.1 (64-bit)
+  **** SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+  **** IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source system.tcl -notrace
+Command: synth_design -top system -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 13144 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 826.664 ; gain = 178.207
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'system' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/system.v:21]
+INFO: [Synth 8-6157] synthesizing module 'vga_test' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:117]
+	Parameter WIDTH bound to: 640 - type: integer 
+	Parameter HEIGHT bound to: 480 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'vga_sync' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:21]
+	Parameter H_DISPLAY bound to: 640 - type: integer 
+	Parameter H_L_BORDER bound to: 48 - type: integer 
+	Parameter H_R_BORDER bound to: 16 - type: integer 
+	Parameter H_RETRACE bound to: 96 - type: integer 
+	Parameter H_MAX bound to: 799 - type: integer 
+	Parameter START_H_RETRACE bound to: 656 - type: integer 
+	Parameter END_H_RETRACE bound to: 751 - type: integer 
+	Parameter V_DISPLAY bound to: 480 - type: integer 
+	Parameter V_T_BORDER bound to: 10 - type: integer 
+	Parameter V_B_BORDER bound to: 33 - type: integer 
+	Parameter V_RETRACE bound to: 2 - type: integer 
+	Parameter V_MAX bound to: 524 - type: integer 
+	Parameter START_V_RETRACE bound to: 513 - type: integer 
+	Parameter END_V_RETRACE bound to: 514 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'vga_sync' (1#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:21]
+WARNING: [Synth 8-567] referenced signal 'set' should be on the sensitivity list [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:288]
+WARNING: [Synth 8-5856] 3D RAM screen_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-3848] Net screen[0][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[1][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[2][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[3][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[4][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[5][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[6][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[7][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[8][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[9][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[10][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[11][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[12][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[13][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[14][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[15][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[16][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[17][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[18][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[19][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[20][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[21][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[22][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[23][0] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[0][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[1][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[2][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[3][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[4][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[5][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[6][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[7][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[8][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[9][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[10][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[11][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[12][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[13][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[14][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[15][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[16][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[17][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[18][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[19][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[20][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[21][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[22][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[23][1] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[0][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[1][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[2][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[3][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[4][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[5][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[6][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[7][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net set[0][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[0][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[1][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[1][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[2][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[2][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[3][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[3][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[4][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[4][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[5][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[5][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[6][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[6][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[7][0][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[7][0][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net screen[16][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[17][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[18][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[19][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[20][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[21][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[22][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[23][2] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[0][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[1][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[2][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[3][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[4][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[5][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[6][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net screen[7][3] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:144]
+WARNING: [Synth 8-3848] Net set[0][1][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[0][1][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[1][1][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[1][1][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[2][1][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[2][1][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[3][1][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[3][1][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[4][1][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[4][1][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[5][1][14] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+WARNING: [Synth 8-3848] Net set[5][1][15] in module/entity vga_test does not have driver. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:145]
+INFO: [Common 17-14] Message 'Synth 8-3848' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'vga_test' (2#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/vga.v:117]
+INFO: [Synth 8-6157] synthesizing module 'uartSystem' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:21]
+INFO: [Synth 8-6157] synthesizing module 'baudrate_gen' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/baudrate_gen.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'baudrate_gen' (3#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/baudrate_gen.v:23]
+INFO: [Synth 8-6157] synthesizing module 'receiver' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/receiver.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/receiver.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'receiver' (4#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/receiver.v:23]
+INFO: [Synth 8-6157] synthesizing module 'transmitter' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/transmitter.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/transmitter.v:50]
+INFO: [Synth 8-6155] done synthesizing module 'transmitter' (5#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/transmitter.v:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:134]
+WARNING: [Synth 8-6014] Unused sequential element result_reg was removed.  [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:135]
+INFO: [Synth 8-6155] done synthesizing module 'uartSystem' (6#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'system' (7#1) [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/system.v:21]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port push[1]
+WARNING: [Synth 8-3331] design vga_test has unconnected port push[0]
+WARNING: [Synth 8-3331] design system has unconnected port led[10]
+WARNING: [Synth 8-3331] design system has unconnected port led[9]
+WARNING: [Synth 8-3331] design system has unconnected port led[8]
+WARNING: [Synth 8-3331] design system has unconnected port led[7]
+WARNING: [Synth 8-3331] design system has unconnected port led[6]
+WARNING: [Synth 8-3331] design system has unconnected port led[5]
+WARNING: [Synth 8-3331] design system has unconnected port led[4]
+WARNING: [Synth 8-3331] design system has unconnected port led[3]
+WARNING: [Synth 8-3331] design system has unconnected port led[2]
+WARNING: [Synth 8-3331] design system has unconnected port led[1]
+WARNING: [Synth 8-3331] design system has unconnected port led[0]
+WARNING: [Synth 8-3331] design system has unconnected port sw[11]
+WARNING: [Synth 8-3331] design system has unconnected port sw[10]
+WARNING: [Synth 8-3331] design system has unconnected port sw[9]
+WARNING: [Synth 8-3331] design system has unconnected port sw[8]
+WARNING: [Synth 8-3331] design system has unconnected port sw[7]
+WARNING: [Synth 8-3331] design system has unconnected port sw[6]
+WARNING: [Synth 8-3331] design system has unconnected port sw[5]
+WARNING: [Synth 8-3331] design system has unconnected port sw[4]
+WARNING: [Synth 8-3331] design system has unconnected port sw[3]
+WARNING: [Synth 8-3331] design system has unconnected port sw[2]
+WARNING: [Synth 8-3331] design system has unconnected port sw[1]
+WARNING: [Synth 8-3331] design system has unconnected port sw[0]
+WARNING: [Synth 8-3331] design system has unconnected port btnC
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 896.652 ; gain = 248.195
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 896.652 ; gain = 248.195
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 896.652 ; gain = 248.195
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc]
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:36]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:36]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[12]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:37]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:37]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:38]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:38]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[13]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:39]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:39]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:40]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:40]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[14]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:41]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:41]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:42]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:42]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'sw[15]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:43]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:43]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:69]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:69]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[11]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:70]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:70]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:71]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:71]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[12]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:72]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:72]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:73]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:73]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[13]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:74]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:74]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:75]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:75]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[14]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:76]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:76]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:77]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:77]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+WARNING: [Vivado 12-584] No ports matched 'led[15]'. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:78]
+CRITICAL WARNING: [Common 17-55] 'set_property' expects at least one object. [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc:78]
+Resolution: If [get_<value>] was used to populate the object, check to make sure this command returns at least one valid object.
+Finished Parsing XDC File [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/constrs_1/imports/new/Basys 3 Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/system_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/system_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1038.883 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1038.883 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1038.883 ; gain = 390.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1038.883 ; gain = 390.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1038.883 ; gain = 390.426
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:134]
+INFO: [Synth 8-5546] ROM "answer" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_in" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1038.883 ; gain = 390.426
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 10    
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               15 Bit    Registers := 22    
+	               12 Bit    Registers := 1     
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 9     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	  16 Input     12 Bit        Muxes := 200   
+	   2 Input     12 Bit        Muxes := 1     
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 9     
+	  16 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	  16 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 20    
+	  10 Input      1 Bit        Muxes := 2     
+	  16 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module vga_sync 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
+Module vga_test 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 1     
++---Muxes : 
+	  16 Input     12 Bit        Muxes := 200   
+	   2 Input     12 Bit        Muxes := 1     
+Module baudrate_gen 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
+Module receiver 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	  10 Input      8 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module transmitter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+	  10 Input      1 Bit        Muxes := 2     
+Module uartSystem 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 4     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input     15 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 8     
++---Registers : 
+	               15 Bit    Registers := 22    
+	                8 Bit    Registers := 5     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     15 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 9     
+	  16 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 4     
+	  16 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	  16 Input      1 Bit        Muxes := 5     
+	   3 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op2_reg[14:0]' into 'op2_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:90]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-4471] merging register 'op1_reg[14:0]' into 'op1_reg[14:0]' [C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.srcs/sources_1/imports/new/uartSystem.v:89]
+INFO: [Synth 8-5546] ROM "receiver/data_out" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "data_in" is below threshold of ROM address width. It will be mapped to LUTs
+DSP Report: Generating DSP p_0_out, operation Mode is: A*B.
+DSP Report: operator p_0_out is absorbed into DSP p_0_out.
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer4[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer3[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer2[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer1[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[7]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[6]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[5]
+WARNING: [Synth 8-3331] design vga_test has unconnected port answer0[4]
+WARNING: [Synth 8-3331] design vga_test has unconnected port push[1]
+WARNING: [Synth 8-3331] design vga_test has unconnected port push[0]
+WARNING: [Synth 8-3331] design system has unconnected port led[10]
+WARNING: [Synth 8-3331] design system has unconnected port led[9]
+WARNING: [Synth 8-3331] design system has unconnected port led[8]
+WARNING: [Synth 8-3331] design system has unconnected port led[7]
+WARNING: [Synth 8-3331] design system has unconnected port led[6]
+WARNING: [Synth 8-3331] design system has unconnected port led[5]
+WARNING: [Synth 8-3331] design system has unconnected port led[4]
+WARNING: [Synth 8-3331] design system has unconnected port led[3]
+WARNING: [Synth 8-3331] design system has unconnected port led[2]
+WARNING: [Synth 8-3331] design system has unconnected port led[1]
+WARNING: [Synth 8-3331] design system has unconnected port led[0]
+WARNING: [Synth 8-3331] design system has unconnected port sw[11]
+WARNING: [Synth 8-3331] design system has unconnected port sw[10]
+WARNING: [Synth 8-3331] design system has unconnected port sw[9]
+WARNING: [Synth 8-3331] design system has unconnected port sw[8]
+WARNING: [Synth 8-3331] design system has unconnected port sw[7]
+WARNING: [Synth 8-3331] design system has unconnected port sw[6]
+WARNING: [Synth 8-3331] design system has unconnected port sw[5]
+WARNING: [Synth 8-3331] design system has unconnected port sw[4]
+WARNING: [Synth 8-3331] design system has unconnected port sw[3]
+WARNING: [Synth 8-3331] design system has unconnected port sw[2]
+WARNING: [Synth 8-3331] design system has unconnected port sw[1]
+WARNING: [Synth 8-3331] design system has unconnected port sw[0]
+WARNING: [Synth 8-3331] design system has unconnected port btnC
+INFO: [Synth 8-3886] merging instance 'u/data_in_reg[7]' (FDE) to 'u/data_in_reg[6]'
+INFO: [Synth 8-3886] merging instance 'u/answer_reg[4][0]' (FDE) to 'u/answer_reg[4][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (u/\answer_reg[4][2] )
+INFO: [Synth 8-3886] merging instance 'u/answer_reg[4][3]' (FDE) to 'u/answer_reg[4][1]'
+INFO: [Synth 8-3886] merging instance 'u/transmitter/temp_reg[7]' (FDE) to 'u/transmitter/temp_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[0]' (FD) to 'vga/rgb_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[1]' (FD) to 'vga/rgb_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[2]' (FD) to 'vga/rgb_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[3]' (FD) to 'vga/rgb_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[4]' (FD) to 'vga/rgb_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[5]' (FD) to 'vga/rgb_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[6]' (FD) to 'vga/rgb_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[8]' (FD) to 'vga/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[9]' (FD) to 'vga/rgb_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'vga/rgb_reg_reg[10]' (FD) to 'vga/rgb_reg_reg[11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (vga/\rgb_reg_reg[11] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:34 . Memory (MB): peak = 1038.883 ; gain = 390.426
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|uartSystem  | A*B         | 15     | 15     | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:48 ; elapsed = 00:00:48 . Memory (MB): peak = 1064.348 ; gain = 415.891
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 1076.031 ; gain = 427.574
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:00:50 . Memory (MB): peak = 1137.328 ; gain = 488.871
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |   467|
+|3     |DSP48E1 |     1|
+|4     |LUT1    |   145|
+|5     |LUT2    |   400|
+|6     |LUT3    |   770|
+|7     |LUT4    |   424|
+|8     |LUT5    |   269|
+|9     |LUT6    |   489|
+|10    |MUXF7   |    22|
+|11    |MUXF8   |     3|
+|12    |FDRE    |   158|
+|13    |IBUF    |     2|
+|14    |OBUF    |    15|
+|15    |OBUFT   |    11|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------+-------------+------+
+|      |Instance          |Module       |Cells |
++------+------------------+-------------+------+
+|1     |top               |             |  3178|
+|2     |  u               |uartSystem   |  2798|
+|3     |    baudrate_gen  |baudrate_gen |    58|
+|4     |    receiver      |receiver     |   166|
+|5     |    transmitter   |transmitter  |    40|
+|6     |  vga             |vga_test     |   208|
+|7     |    vga_sync_unit |vga_sync     |   195|
++------+------------------+-------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 46 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:00:50 . Memory (MB): peak = 1143.703 ; gain = 353.016
+Synthesis Optimization Complete : Time (s): cpu = 00:00:52 ; elapsed = 00:00:53 . Memory (MB): peak = 1143.703 ; gain = 495.246
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 493 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1147.910 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+72 Infos, 213 Warnings, 18 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:00 . Memory (MB): peak = 1147.910 ; gain = 752.684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1147.910 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/PSlaptop/Desktop/HwnSynLab/Term_Project/Term_Project.runs/synth_1/system.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file system_utilization_synth.rpt -pb system_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 30 17:48:52 2020...
