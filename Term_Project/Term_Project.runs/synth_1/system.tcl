@@ -18,10 +18,7 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
-set_param synth.incrementalSynthesisCache C:/Users/PSlaptop/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-7684-LAPTOP-SDGAOP3A/incrSyn
 set_param xicom.use_bs_reader 1
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a35tcpg236-1
 
 set_param project.singleFileAddWarning.threshold 0

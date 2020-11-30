@@ -122,7 +122,6 @@ module vga_test
 		input wire [7:0] answer2,
 		input wire [7:0] answer1,
 		input wire [7:0] answer0,
-		input wire [1:0] push,
 		output wire hsync, vsync,
 		output wire [11:0] rgb
 	);

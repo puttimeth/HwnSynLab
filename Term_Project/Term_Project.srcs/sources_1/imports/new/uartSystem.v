@@ -21,6 +21,7 @@
 module uartSystem(
     input clk,
     input RsRx,
+    input btnC,
     output RsTx,
     output [7:0] answer4,
     output [7:0] answer3,
@@ -162,6 +163,17 @@ module uartSystem(
             endcase
             if (data_in != 8'hFF) ena = 1;
         end
+        
+        if (btnC) begin            
+            answer[4] = 0;
+            answer[3] = 0;
+            answer[2] = 0;
+            answer[1] = 0;
+            answer[0] = 0;
+            op1=0;
+            op2=0;
+        end
+        
         last_rec = received;
     end
     

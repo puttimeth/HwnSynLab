@@ -21,11 +21,9 @@
 module system(
     output wire RsTx,
     input wire RsRx,
-    output wire [10:0]led,
     output wire [3:0]vgaRed, vgaGreen, vgaBlue,
     output wire Hsync, Vsync,
-    input wire [11:0]sw,
-    input btnC, btnU, btnL, clk
+    input btnC, clk
     );
 
 wire [7:0] answer[0:4];
@@ -37,7 +35,6 @@ vga_test vga(
     .answer2(answer[2]),
     .answer1(answer[1]),
     .answer0(answer[0]),
-    .push({btnL, btnU}),
     .hsync(Hsync),
     .vsync(Vsync),
     .rgb({vgaRed, vgaGreen, vgaBlue})
@@ -46,6 +43,7 @@ vga_test vga(
 uartSystem u(
     .clk(clk),
     .RsRx(RsRx),
+    .btnC(btnC),
     .RsTx(RsTx),
     .answer4(answer[4]),
     .answer3(answer[3]),
@@ -54,10 +52,4 @@ uartSystem u(
     .answer0(answer[0])
 );
 
-/*top_uart u(
-    .RsTx(RsTx),
-    .RsRx(RsRx),
-    .led(led),
-    .clk(clk)
-    );*/
 endmodule
