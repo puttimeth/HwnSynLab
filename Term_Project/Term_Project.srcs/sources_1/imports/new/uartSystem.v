@@ -129,7 +129,7 @@ module uartSystem(
                 K_DIV: begin data_in = data_out;
                 if (state==1) begin operation=3; state=3; end  end
                 K_ENTER: begin 
-                data_in = data_out; 
+                data_in = 8'h20; 
                 if (op1_sign) op1=-op1;
                 if (op2_sign) op2=-op2;
                 case (operation)
