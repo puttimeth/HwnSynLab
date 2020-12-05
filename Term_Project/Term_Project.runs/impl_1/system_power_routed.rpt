@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Tue Dec  1 21:42:15 2020
+| Date             : Sat Dec  5 08:26:37 2020
 | Host             : DESKTOP-OOQRHJ2 running 64-bit major release  (build 9200)
 | Command          : report_power -file system_power_routed.rpt -pb system_power_summary_routed.pb -rpx system_power_routed.rpx
 | Design           : system
@@ -52,15 +52,15 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Clocks         |    <0.001 |        3 |       --- |             --- |
-| Slice Logic    |    <0.001 |     3123 |       --- |             --- |
-|   LUT as Logic |    <0.001 |     2008 |     20800 |            9.65 |
+| Clocks         |     0.001 |        3 |       --- |             --- |
+| Slice Logic    |    <0.001 |     3116 |       --- |             --- |
+|   LUT as Logic |    <0.001 |     2003 |     20800 |            9.63 |
 |   CARRY4       |    <0.001 |      467 |      8150 |            5.73 |
-|   Register     |    <0.001 |      156 |     41600 |            0.38 |
+|   Register     |    <0.001 |      155 |     41600 |            0.37 |
 |   F7/F8 Muxes  |    <0.001 |       26 |     32600 |            0.08 |
 |   Others       |     0.000 |       16 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |    <0.001 |     2584 |       --- |             --- |
+| Signals        |    <0.001 |     2574 |       --- |             --- |
 | DSPs           |     0.000 |        1 |        90 |            1.11 |
 | I/O            |    <0.001 |       18 |       106 |           16.98 |
 | Static Power   |     0.072 |          |           |                 |
@@ -140,11 +140,13 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+--------+-----------+
-| Name   | Power (W) |
-+--------+-----------+
-| system |     0.002 |
-|   vga  |     0.001 |
-+--------+-----------+
++-------------------+-----------+
+| Name              | Power (W) |
++-------------------+-----------+
+| system            |     0.002 |
+|   u               |     0.001 |
+|   vga             |     0.001 |
+|     vga_sync_unit |     0.001 |
++-------------------+-----------+
 
 

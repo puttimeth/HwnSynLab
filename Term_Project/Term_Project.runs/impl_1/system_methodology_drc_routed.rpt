@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Dec  1 21:42:14 2020
+| Date         : Sat Dec  5 08:26:36 2020
 | Host         : DESKTOP-OOQRHJ2 running 64-bit major release  (build 9200)
 | Command      : report_methodology -file system_methodology_drc_routed.rpt -pb system_methodology_drc_routed.pb -rpx system_methodology_drc_routed.rpx
 | Design       : system
@@ -23,11 +23,11 @@ Table of Contents
           Floorplan: design_1
       Design limits: <entire design considered>
              Max violations: <unlimited>
-             Violations found: 109
+             Violations found: 108
 +-----------+------------------+-------------------------------+------------+
 | Rule      | Severity         | Description                   | Violations |
 +-----------+------------------+-------------------------------+------------+
-| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 99         |
+| TIMING-17 | Critical Warning | Non-clocked sequential cell   | 98         |
 | TIMING-18 | Warning          | Missing input or output delay | 10         |
 +-----------+------------------+-------------------------------+------------+
 
@@ -435,95 +435,90 @@ Related violations: <none>
 
 TIMING-17#81 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/state_reg[2]/C is not reached by a timing clock
+The clock pin u/transmitter/bit_out_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#82 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/bit_out_reg/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#83 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[0]/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#84 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[1]/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#85 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[2]/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#86 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[3]/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#87 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[4]/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[5]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#88 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[5]/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#89 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[6]/C is not reached by a timing clock
+The clock pin u/transmitter/count_reg[7]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#90 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/count_reg[7]/C is not reached by a timing clock
+The clock pin u/transmitter/last_ena_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#91 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/last_ena_reg/C is not reached by a timing clock
+The clock pin u/transmitter/sending_reg/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#92 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/sending_reg/C is not reached by a timing clock
+The clock pin u/transmitter/temp_reg[0]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#93 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/temp_reg[0]/C is not reached by a timing clock
+The clock pin u/transmitter/temp_reg[1]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#94 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/temp_reg[1]/C is not reached by a timing clock
+The clock pin u/transmitter/temp_reg[2]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#95 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/temp_reg[2]/C is not reached by a timing clock
+The clock pin u/transmitter/temp_reg[3]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#96 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/temp_reg[3]/C is not reached by a timing clock
+The clock pin u/transmitter/temp_reg[4]/C is not reached by a timing clock
 Related violations: <none>
 
 TIMING-17#97 Critical Warning
 Non-clocked sequential cell  
-The clock pin u/transmitter/temp_reg[4]/C is not reached by a timing clock
-Related violations: <none>
-
-TIMING-17#98 Critical Warning
-Non-clocked sequential cell  
 The clock pin u/transmitter/temp_reg[6]/C is not reached by a timing clock
 Related violations: <none>
 
-TIMING-17#99 Critical Warning
+TIMING-17#98 Critical Warning
 Non-clocked sequential cell  
 The clock pin vga/rgb_reg_reg[7]/C is not reached by a timing clock
 Related violations: <none>

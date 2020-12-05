@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Tue Dec  1 21:41:45 2020
+| Date         : Sat Dec  5 08:26:08 2020
 | Host         : DESKTOP-OOQRHJ2 running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file system_control_sets_placed.rpt
 | Design       : system
@@ -27,7 +27,7 @@ Table of Contents
 |    Minimum number of control sets                        |    22 |
 |    Addition due to synthesis replication                 |     0 |
 |    Addition due to physical synthesis replication        |     0 |
-| Unused register locations in slices containing registers |   100 |
+| Unused register locations in slices containing registers |   101 |
 +----------------------------------------------------------+-------+
 * Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
 ** Run report_qor_suggestions for automated merging and remapping suggestions
@@ -45,8 +45,8 @@ Table of Contents
 | >= 6 to < 8        |     2 |
 | >= 8 to < 10       |     2 |
 | >= 10 to < 12      |     2 |
-| >= 12 to < 14      |     0 |
-| >= 14 to < 16      |     3 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     2 |
 | >= 16              |     2 |
 +--------------------+-------+
 * Control sets can be remapped at either synth_design or opt_design
@@ -58,12 +58,12 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
 +--------------+-----------------------+------------------------+-----------------+--------------+
-| No           | No                    | No                     |              20 |           13 |
+| No           | No                    | No                     |              19 |           14 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              48 |           14 |
-| Yes          | No                    | No                     |              40 |           22 |
+| No           | Yes                   | No                     |              48 |           15 |
+| Yes          | No                    | No                     |              40 |           18 |
 | Yes          | No                    | Yes                    |               0 |            0 |
-| Yes          | Yes                   | No                     |              48 |           35 |
+| Yes          | Yes                   | No                     |              48 |           34 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
 
 
@@ -74,26 +74,26 @@ Table of Contents
 |        Clock Signal       |          Enable Signal          |          Set/Reset Signal         | Slice Load Count | Bel Load Count |
 +---------------------------+---------------------------------+-----------------------------------+------------------+----------------+
 |  vga/vga_sync_unit/p_tick |                                 |                                   |                1 |              1 |
-|  baud                     | u/receiver/data_out_0[4]        |                                   |                1 |              1 |
+|  baud                     | u/receiver/data_out_0[2]        |                                   |                1 |              1 |
 |  baud                     | u/receiver/data_out_0[5]        |                                   |                1 |              1 |
+|  baud                     | u/receiver/data_out_0[4]        |                                   |                1 |              1 |
 |  baud                     | u/receiver/data_out_0[6]        |                                   |                1 |              1 |
 |  baud                     | u/receiver/data_out_0[7]        |                                   |                1 |              1 |
 |  baud                     | u/receiver/data_out_0[3]        |                                   |                1 |              1 |
-|  baud                     | u/receiver/data_out_0[2]        |                                   |                1 |              1 |
 |  baud                     | u/receiver/data_out_0[1]        |                                   |                1 |              1 |
 |  baud                     | u/receiver/data_out_0[0]        |                                   |                1 |              1 |
 |  baud                     | u/transmitter/bit_out_i_2_n_0   | u/transmitter/bit_out_i_1_n_0     |                1 |              1 |
 |  clk_IBUF_BUFG            |                                 |                                   |                4 |              5 |
-|  baud                     | u/receiver/received_reg_0[0]    |                                   |                3 |              6 |
-|  baud                     | u/transmitter/temp[6]_i_1_n_0   |                                   |                2 |              6 |
-|  baud                     |                                 | u/receiver/count[7]_i_1_n_0       |                3 |              8 |
+|  baud                     | u/receiver/E[0]                 |                                   |                2 |              6 |
+|  baud                     | u/transmitter/temp[6]_i_1_n_0   |                                   |                1 |              6 |
+|  baud                     |                                 | u/receiver/count[7]_i_1_n_0       |                4 |              8 |
 |  baud                     |                                 | u/transmitter/count[7]_i_1__0_n_0 |                3 |              8 |
-|  clk_IBUF_BUFG            | vga/vga_sync_unit/p_tick        |                                   |                6 |             10 |
+|  clk_IBUF_BUFG            | vga/vga_sync_unit/p_tick        |                                   |                4 |             10 |
 |  clk_IBUF_BUFG            | vga/vga_sync_unit/v_count_reg0  |                                   |                3 |             10 |
-|  baud                     |                                 |                                   |                8 |             14 |
-|  baud                     | u/receiver/data_out_reg[1]_0[0] | btnC_IBUF                         |               12 |             15 |
-|  baud                     | u/receiver/E[0]                 | btnC_IBUF                         |               12 |             15 |
-|  baud                     | u/receiver/data_out_reg[5]_0[0] | btnC_IBUF                         |               10 |             17 |
+|  baud                     |                                 |                                   |                9 |             13 |
+|  baud                     | u/receiver/data_out_reg[1]_1[0] | btnC_IBUF                         |               12 |             15 |
+|  baud                     | u/receiver/data_out_reg[1]_0[0] | btnC_IBUF                         |               10 |             15 |
+|  baud                     | u/receiver/data_out_reg[5]_0[0] | btnC_IBUF                         |               11 |             17 |
 |  clk_IBUF_BUFG            |                                 | u/baudrate_gen/clear              |                8 |             32 |
 +---------------------------+---------------------------------+-----------------------------------+------------------+----------------+
 
